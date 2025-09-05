@@ -1,7 +1,7 @@
 import { User, Transaction } from '../types';
 
 export const mockUsers: User[] = [
-  {"id":1,"email":"john.smith@email.com","name":"John Smith"},
+  {"id":1,"email":"john.smith@email.com","name":"John Smit"},
   {"id":2,"email":"sarah.johnson@email.com","name":"Sarah Johnson"},
   {"id":3,"email":"mike.wilson@email.com","name":"Mike Wilson"},
   {"id":4,"email":"emma.davis@email.com","name":"Emma Davis"},
