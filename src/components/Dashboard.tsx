@@ -51,6 +51,7 @@ const Dashboard: React.FC = () => {
           </div>
           <div className="stat-content">
             <h3>Active Users</h3>
+            <h3>Active Users</h3>
             <p className="stat-number">{usersWithTransactions.length}</p>
           </div>
         </div>
