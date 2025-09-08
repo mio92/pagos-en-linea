@@ -42,6 +42,8 @@ const Dashboard: React.FC = () => {
       <div className="dashboard-header">
         <h1>User Transactions Dashboard</h1>
         <p>Monitor and analyze usr transacti dat</p>
+        <p>Este es un ajuste grande</p>
+        <p>Este es un ajuste grande</p>
       </div>
 
       <div className="dashboard-stats">
