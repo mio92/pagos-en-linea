@@ -66,6 +66,10 @@ const Dashboard: React.FC = () => {
             <h3>Total Transactions</h3>
         <p>Este es un ajuste grande</p>
         <p>Este es un ajuste grande</p>
+        <p>Este es un ajuste grande</p>
+        <p>Este es un ajuste grande</p>
+        <p>Este es un ajuste grande</p>
+        <p>Este es un ajuste grande</p>
             <p className="stat-number">{transactionSummary.totalTransactions}</p>
           </div>
         </div>
@@ -116,6 +120,8 @@ const Dashboard: React.FC = () => {
 
       {filteredUsers.length === 0 && (
         <div className="empty-state">
+          <p>No users found matching your search criteria.</p>
+          <p>No users found matching your search criteria.</p>
           <p>No users found matching your search criteria.</p>
           <p>No users found matching your search criteria.</p>
           <p>No users found matching your search criteria.</p>
