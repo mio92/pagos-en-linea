@@ -67,6 +67,12 @@ const Dashboard: React.FC = () => {
         <p>Este es un ajuste no tan grande</p>
         <p>Este es un ajuste no tan grande</p>
         <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
             <p className="stat-number">{transactionSummary.totalTransactions}</p>
           </div>
         </div>
