@@ -86,9 +86,6 @@ const Dashboard: React.FC = () => {
           </div>
           <div className="stat-content">
           <h3>Average Transaction</h3>
-          <h3>Average Transaction</h3>
-          <h3>Average Transaction</h3>
-          <h3>Average Transaction</h3>
             <p className="stat-number">{formatCurrency(transactionSummary.averageAmount)}</p>
           </div>
         </div>
@@ -119,6 +116,8 @@ const Dashboard: React.FC = () => {
 
       {filteredUsers.length === 0 && (
         <div className="empty-state">
+          <p>No users found matching your search criteria.</p>
+          <p>No users found matching your search criteria.</p>
           <p>No users found matching your search criteria.</p>
         </div>
       )}
