@@ -66,13 +66,6 @@ const Dashboard: React.FC = () => {
             <h3>Total Transactions</h3>
         <p>Este es un ajuste grande</p>
         <p>Este es un ajuste grande</p>
-        <p>Este es un ajuste grande</p>
-        <p>Este es un ajuste grande</p>
-        <p>Este es un ajuste grande</p>
-        <p>Este es un ajuste grande</p>
-        <p>Este es un ajuste grande</p>
-        <p>Este es un ajuste grande</p>
-        <p>Este es un ajuste grande</p>
             <p className="stat-number">{transactionSummary.totalTransactions}</p>
           </div>
         </div>
@@ -92,7 +85,10 @@ const Dashboard: React.FC = () => {
             <TrendingUp size={24} />
           </div>
           <div className="stat-content">
-            <h3>Average Transaction</h3>
+          <h3>Average Transaction</h3>
+          <h3>Average Transaction</h3>
+          <h3>Average Transaction</h3>
+          <h3>Average Transaction</h3>
             <p className="stat-number">{formatCurrency(transactionSummary.averageAmount)}</p>
           </div>
         </div>
