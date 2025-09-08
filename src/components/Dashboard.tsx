@@ -41,7 +41,7 @@ const Dashboard: React.FC = () => {
     <div className="dashboard">
       <div className="dashboard-header">
         <h1>User Transactions Dashboard</h1>
-        <p>Monitor and analyze user transaction dat</p>
+        <p>Monitor and analyze user transacti dat</p>
       </div>
 
       <div className="dashboard-stats">
