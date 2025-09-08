@@ -87,6 +87,8 @@ const Dashboard: React.FC = () => {
           <div className="stat-content">
           <h3>Average Transaction</h3>
           <h3>Average Transaction</h3>
+          <h3>Average Transaction</h3>
+          <h3>Average Transaction</h3>
             <p className="stat-number">{formatCurrency(transactionSummary.averageAmount)}</p>
           </div>
         </div>
