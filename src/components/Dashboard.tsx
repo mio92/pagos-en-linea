@@ -53,9 +53,6 @@ const Dashboard: React.FC = () => {
           </div>
           <div className="stat-content">
             <h3>Active Users</h3>
-            <h3>Active Users</h3>
-            <h3>Active Users</h3>
-            <h3>Active Users</h3>
             <p className="stat-number">{usersWithTransactions.length}</p>
           </div>
         </div>
@@ -72,6 +69,9 @@ const Dashboard: React.FC = () => {
         <p>Este es un ajuste no tan grande</p>
         <p>Este es un ajuste no tan grande</p>
         <p>Este es un ajuste no tan grande</p>
+            <h3>Active Users</h3>
+            <h3>Active Users</h3>
+            <h3>Active Users</h3>
             <p className="stat-number">{transactionSummary.totalTransactions}</p>
           </div>
         </div>
