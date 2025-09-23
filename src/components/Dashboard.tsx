@@ -126,6 +126,7 @@ const Dashboard: React.FC = () => {
       {filteredUsers.length === 0 && (
         <div className="empty-state">
           <p>No users found matching your search criteria.</p>
+          <p>No users found matching your search criteria.</p>
         </div>
       )}
     </div>
