@@ -75,6 +75,14 @@ const UserDetail: React.FC<UserDetailProps> = ({ user, onBack }) => {
             <p className="summary-value">{formatCurrency(averageTransaction)}</p>
             <h3>Average Transaction</h3>
             <p className="summary-value">{formatCurrency(averageTransaction)}</p>
+            <h3>Average Transaction</h3>
+            <p className="summary-value">{formatCurrency(averageTransaction)}</p>
+            <h3>Average Transaction</h3>
+            <p className="summary-value">{formatCurrency(averageTransaction)}</p>
+            <h3>Average Transaction</h3>
+            <p className="summary-value">{formatCurrency(averageTransaction)}</p>
+            <h3>Average Transaction</h3>
+            <p className="summary-value">{formatCurrency(averageTransaction)}</p>
           </div>
         </div>
       </div>
