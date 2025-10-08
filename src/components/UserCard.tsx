@@ -35,6 +35,12 @@ const UserCard: React.FC<UserCardProps> = ({ user, onClick }) => {
             <span className="stat-label">Transactions</span>
             <span className="stat-value">{user.transactionCount}</span>
           </div>
+          <div className="stat-content">
+            <span className="stat-label">Transactions</span>
+            <span className="stat-value">{user.transactionCount}</span>
+            <span className="stat-label">Transactions</span>
+            <span className="stat-value">{user.transactionCount}</span>
+          </div>
         </div>
         
         <div className="stat">
