@@ -46,7 +46,6 @@ const Dashboard: React.FC = () => {
         <p>Este es un ajuste grande</p>
       </div>
 
-      <p>prueba2</p>
       <div className="dashboard-stats">
         <div className="stat-card">
           <div className="stat-icon">
