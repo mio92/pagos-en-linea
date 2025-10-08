@@ -59,6 +59,24 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
               </div>
             </div>
             
+            <div className="transaction-details">
+              <div className="transaction-id">
+                Transaction #{transaction.id}
+              </div>
+              <div className="transaction-date">
+                {formatDate(transaction.created_at)}
+              </div>
+            </div>
+            
+            <div className="transaction-details">
+              <div className="transaction-id">
+                Transaction #{transaction.id}
+              </div>
+              <div className="transaction-date">
+                {formatDate(transaction.created_at)}
+              </div>
+            </div>
+            
             <div className="transaction-amount">
               {formatCurrency(transaction.amount)}
               <p>crea en el dia de hoy: {formatDate(transaction.created_at)}</p>
