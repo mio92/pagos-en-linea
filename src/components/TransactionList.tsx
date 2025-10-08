@@ -24,6 +24,7 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
   return (
     <div className="transaction-list">
       <h3>Transaction History</h3>
+      <p>prueba3</p>
       <div className="transaction-items">
         {transactions.map(transaction => (
           <div key={transaction.id} className="transaction-item">
