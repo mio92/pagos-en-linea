@@ -44,7 +44,6 @@ const Dashboard: React.FC = () => {
         <p>Monitor and analyze usr transaction data</p>
       </div>
 
-      <p>prueba2</p>
       <div className="dashboard-stats">
         <div className="stat-card">
           <div className="stat-icon">
@@ -61,6 +60,18 @@ const Dashboard: React.FC = () => {
             <Activity size={24} />
           </div>
           <div className="stat-content">
+            <h3>Total Transactions</h3>
+        <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
+            <h3>Total Transactions</h3>
+        <p>Este es un ajuste no tan grande</p>
+            <h3>Total Transactions</h3>
+        <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
+            <h3>Total Transactions</h3>
+        <p>Este es un ajuste no tan grande</p>
+        <p>Este es un ajuste no tan grande</p>
             <h3>Total Transactions</h3>
             <p className="stat-number">{transactionSummary.totalTransactions}</p>
           </div>
@@ -112,6 +123,12 @@ const Dashboard: React.FC = () => {
 
       {filteredUsers.length === 0 && (
         <div className="empty-state">
+        <p>No users found matching your search criteria.</p>
+        <p>No users found matching your search criteria.</p>
+          <p>No users found matching your search criteria.</p>
+        <p>No users found matching your search criteria.</p>
+        <p>No users found matching your search criteria.</p>
+          <p>No users found matching your search criteria.</p>
         <p>No users found matching your search criteria.</p>
         </div>
       )}
