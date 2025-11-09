@@ -23,7 +23,7 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
 
   return (
     <div className="transaction-list">
-      <h3>Transaction History</h3>
+      <h3>Historial de Transacciones</h3>
       <div className="transaction-items">
         {transactions.map(transaction => (
           <div key={transaction.id} className="transaction-item">
@@ -33,7 +33,7 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
             
             <div className="transaction-details">
               <div className="transaction-id">
-                Transaction #{transaction.id}
+                Transacción #{transaction.id}
               </div>
               <div className="transaction-date">
                 {formatDate(transaction.created_at)}
