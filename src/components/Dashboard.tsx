@@ -86,18 +86,6 @@ const Dashboard: React.FC = () => {
         </div>
       </div>
 
-      {/* <div className="dashboard-controls">
-        <div className="search-container">
-          <Search size={20} />
-          <input
-            type="text"
-            placeholder="Buscar usuarios por nombre o correo electrónico..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="search-input"
-          />
-        </div>
-      </div> */}
 
       <div className="users-grid">
         {filteredUsers.map(user => (
