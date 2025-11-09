@@ -56,9 +56,6 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
               <div className="transaction-date">
                 {formatDate(transaction.created_at)}
               </div>
-              <div className="transaction-date">
-                {formatDate(transaction.created_at)}
-              </div>
             </div>
             
             <div className="transaction-details">
