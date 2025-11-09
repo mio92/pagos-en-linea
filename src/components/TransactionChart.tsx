@@ -8,7 +8,7 @@ interface TransactionChartProps {
 }
 
 const TransactionChart: React.FC<TransactionChartProps> = ({ transactions }) => {
-  // Group transactions by date for chart visualization
+  // Agrupar transacciones por fecha para visualización en el gráfico
   const chartData = transactions.reduce((acc, transaction) => {
     const date = new Date(transaction.created_at).toLocaleDateString();
     const existing = acc.find(item => item.date === date);
@@ -31,12 +31,12 @@ const TransactionChart: React.FC<TransactionChartProps> = ({ transactions }) => 
     if (active && payload && payload.length) {
       return (
         <div className="chart-tooltip">
-          <p className="tooltip-label">{`Date: ${label}`}</p>
+          <p className="tooltip-label">{`Fecha: ${label}`}</p>
           <p className="tooltip-amount">
-            {`Amount: ${formatCurrency(payload[0].value)}`}
+            {`Monto: ${formatCurrency(payload[0].value)}`}
           </p>
           <p className="tooltip-count">
-            {`Transactions: ${payload[0].payload.count}`}
+            {`Transacciones: ${payload[0].payload.count}`}
           </p>
         </div>
       );
@@ -46,15 +46,21 @@ const TransactionChart: React.FC<TransactionChartProps> = ({ transactions }) => 
 
   return (
     <div className="transaction-chart">
-      <h3>Transaction Overview</h3>
+      <h3>Resumen de Transacciones</h3>
       <div className="chart-container">
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="date" />
-            <YAxis tickFormatter={(value) => `$${value}`} />
+            <defs>
+              <linearGradient id="colorGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#0066cc" />
+                <stop offset="100%" stopColor="#003366" />
+              </linearGradient>
+            </defs>
+            <CartesianGrid strokeDasharray="3 3" stroke="rgba(0, 51, 102, 0.1)" />
+            <XAxis dataKey="date" stroke="#6b7280" />
+            <YAxis tickFormatter={(value) => `$${value.toLocaleString('es-MX')}`} stroke="#6b7280" />
             <Tooltip content={<CustomTooltip />} />
-            <Bar dataKey="amount" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="amount" fill="url(#colorGradient)" radius={[8, 8, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>

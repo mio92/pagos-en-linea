@@ -11,7 +11,7 @@ export const processUserTransactions = (users: User[], transactions: Transaction
       totalAmount,
       transactionCount: userTransactions.length
     };
-  }).filter(user => user.transactionCount > 0); // Only show users with transactions
+  }).filter(user => user.transactionCount > 0); // Solo mostrar usuarios con transacciones
 };
 
 export const calculateTransactionSummary = (transactions: Transaction[]): TransactionSummary => {
@@ -31,14 +31,14 @@ export const calculateTransactionSummary = (transactions: Transaction[]): Transa
 };
 
 export const formatCurrency = (amount: number): string => {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('es-MX', {
     style: 'currency',
     currency: 'USD'
   }).format(amount);
 };
 
 export const formatDate = (dateString: string): string => {
-  return new Date(dateString).toLocaleDateString('en-US', {
+  return new Date(dateString).toLocaleDateString('es-MX', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',

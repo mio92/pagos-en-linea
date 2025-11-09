@@ -20,7 +20,7 @@ const UserDetail: React.FC<UserDetailProps> = ({ user, onBack }) => {
       <div className="user-detail-header">
         <button className="back-button" onClick={onBack}>
           <ArrowLeft size={20} />
-          Back to Users
+          Volver a Usuarios
         </button>
         
         <div className="user-profile">
@@ -43,7 +43,7 @@ const UserDetail: React.FC<UserDetailProps> = ({ user, onBack }) => {
             <DollarSign size={24} />
           </div>
           <div className="summary-content">
-            <h3>Total Amount</h3>
+            <h3>Monto Total</h3>
             <p className="summary-value">{formatCurrency(user.totalAmount)}</p>
           </div>
         </div>
@@ -53,7 +53,7 @@ const UserDetail: React.FC<UserDetailProps> = ({ user, onBack }) => {
             <Calendar size={24} />
           </div>
           <div className="summary-content">
-            <h3>Total Transactions</h3>
+            <h3>Transacciones Totales</h3>
             <p className="summary-value">{user.transactionCount}</p>
           </div>
         </div>
@@ -63,7 +63,7 @@ const UserDetail: React.FC<UserDetailProps> = ({ user, onBack }) => {
             <DollarSign size={24} />
           </div>
           <div className="summary-content">
-            <h3>Average Transaction</h3>
+            <h3>Transacción Promedio</h3>
             <p className="summary-value">{formatCurrency(averageTransaction)}</p>
             <h3>Average Transaction</h3>
             <p className="summary-value">{formatCurrency(averageTransaction)}</p>

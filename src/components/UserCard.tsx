@@ -30,7 +30,7 @@ const UserCard: React.FC<UserCardProps> = ({ user, onClick }) => {
             <CreditCard size={16} />
           </div>
           <div className="stat-content">
-            <span className="stat-label">Transactions</span>
+            <span className="stat-label">Transacciones</span>
             <span className="stat-value">{user.transactionCount}</span>
             <span className="stat-label">Transactions</span>
             <span className="stat-value">{user.transactionCount}</span>
@@ -44,7 +44,7 @@ const UserCard: React.FC<UserCardProps> = ({ user, onClick }) => {
             <TrendingUp size={16} />
           </div>
           <div className="stat-content">
-            <span className="stat-label">Total Amount</span>
+            <span className="stat-label">Monto Total</span>
             <span className="stat-value">{formatCurrency(user.totalAmount)}</span>
           </div>
         </div>
