@@ -19,14 +19,7 @@ const Dashboard: React.FC = () => {
     return calculateTransactionSummary(mockTransactions);
   }, []);
 
-  const filteredUsers = useMemo(() => {
-    if (!searchTerm) return usersWithTransactions;
-    
-    return usersWithTransactions.filter(user =>
-      user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      user.email.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  }, [usersWithTransactions, searchTerm]);
+  
 
   if (selectedUser) {
     return (
@@ -86,22 +79,9 @@ const Dashboard: React.FC = () => {
         </div>
       </div>
 
+      //
 
-      <div className="users-grid">
-        {filteredUsers.map(user => (
-          <UserCard
-            key={user.id}
-            user={user}
-            onClick={() => setSelectedUser(user)}
-          />
-        ))}
-      </div>
-
-      {filteredUsers.length === 0 && (
-        <div className="empty-state">
-          <p>No se encontraron usuarios que coincidan con tu búsqueda.</p>
-        </div>
-      )}
+      
     </div>
   );
 };
