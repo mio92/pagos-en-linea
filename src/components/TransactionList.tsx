@@ -51,6 +51,12 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
             
             <div className="transaction-details">
               <div className="transaction-id">
+                texto de prueba
+              </div>
+            </div>
+            
+            <div className="transaction-details">
+              <div className="transaction-id">
                 Transaction #{transaction.id}
               </div>
               <div className="transaction-date">
