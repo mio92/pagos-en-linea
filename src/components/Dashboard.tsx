@@ -9,7 +9,7 @@ import { formatCurrency } from '../utils/dataProcessing';
 
 const Dashboard: React.FC = () => {
   const [selectedUser, setSelectedUser] = useState<UserWithTransactions | null>(null);
-  
+  const [searchTerm, setSearchTerm] = useState('');
 
   const usersWithTransactions = useMemo(() => {
     return processUserTransactions(mockUsers, mockTransactions);
