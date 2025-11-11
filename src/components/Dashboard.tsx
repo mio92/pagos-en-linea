@@ -10,6 +10,7 @@ import { formatCurrency } from '../utils/dataProcessing';
 const Dashboard: React.FC = () => {
   const [selectedUser, setSelectedUser] = useState<UserWithTransactions | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
+
   const usersWithTransactions = useMemo(() => {
     return processUserTransactions(mockUsers, mockTransactions);
   }, []);
@@ -34,7 +35,6 @@ const Dashboard: React.FC = () => {
       <div className="dashboard-header">
         <h1>Panel de Transacciones de Usuarios</h1>
         <p>Monitorea y analiza los datos de transacciones de usuarios</p>
-        <p>listado de usuarios</p>
       </div>
 
       <div className="dashboard-stats">
